@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:duplicateParentState="false">
+	<View android:layout_width="fill_parent" android:layout_height="1px" android:background="#FFFFFFFF" />
+	<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:padding="10px">
+		<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/label_mode" android:text="模式: " android:textSize="20px" android:clickable="true"></TextView>
+	</LinearLayout>
+	<View android:layout_width="fill_parent" android:layout_height="1px" android:background="#FFFFFFFF" />
+
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:padding="10px" >
+
+	    <ImageView
+	        android:id="@+id/img_wifi"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:clickable="false"
+	        android:src="@drawable/eth_wifi" >
+	    </ImageView>
+
+	    <TextView
+	        android:id="@+id/img_spacer"
+	        android:layout_width="5px"
+	        android:layout_height="wrap_content"
+	        android:clickable="false"
+	        android:text=""
+	        android:textSize="20px" >
+	    </TextView>
+
+	    <ImageView
+	        android:id="@+id/img_3g"
+	        android:layout_width="54dp"
+	        android:layout_height="36dp"
+	        android:clickable="false"
+	        android:src="@drawable/eth_3g" >
+
+	    </ImageView>
+
+	</LinearLayout>
+
+	<ListView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/listview"></ListView>
+</LinearLayout>

@@ -1,0 +1,131 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  Internal Error (javaClasses.cpp:126), pid=6288, tid=3300
+#  fatal error: Invalid layout of preloaded class
+#
+# JRE version:  (8.0_31-b13) (build )
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (25.31-b07 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000000000266e000):  JavaThread "Unknown thread" [_thread_in_vm, id=3300, stack(0x0000000002840000,0x0000000002940000)]
+
+Stack: [0x0000000002840000,0x0000000002940000]
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x3169ba]
+V  [jvm.dll+0x2674c3]
+V  [jvm.dll+0x268103]
+V  [jvm.dll+0x25f876]
+V  [jvm.dll+0x5e443]
+V  [jvm.dll+0x5e533]
+V  [jvm.dll+0x72e9a]
+V  [jvm.dll+0x73208]
+V  [jvm.dll+0xe4997]
+V  [jvm.dll+0xe4d26]
+V  [jvm.dll+0x1fa057]
+V  [jvm.dll+0x22b694]
+V  [jvm.dll+0x14d8c1]
+C  [javaw.exe+0x20c6]
+C  [javaw.exe+0xc9eb]
+C  [javaw.exe+0xca7f]
+C  [kernel32.dll+0x15a4d]
+C  [ntdll.dll+0x2b831]
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x000000000266e000 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=3300, stack(0x0000000002840000,0x0000000002940000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (10 events):
+Event: 0.013 loading class java/lang/CharSequence done
+Event: 0.013 loading class java/lang/String done
+Event: 0.013 loading class java/lang/Class
+Event: 0.013 loading class java/lang/reflect/AnnotatedElement
+Event: 0.013 loading class java/lang/reflect/AnnotatedElement done
+Event: 0.013 loading class java/lang/reflect/GenericDeclaration
+Event: 0.013 loading class java/lang/reflect/GenericDeclaration done
+Event: 0.013 loading class java/lang/reflect/Type
+Event: 0.013 loading class java/lang/reflect/Type done
+Event: 0.013 loading class java/lang/Class done
+
+
+Dynamic libraries:
+0x000000013fcf0000 - 0x000000013fd24000 	C:\Program Files\Java\jre1.8.0_31\bin\javaw.exe
+0x0000000076de0000 - 0x0000000076f89000 	C:\Windows\SYSTEM32\ntdll.dll
+0x0000000076cc0000 - 0x0000000076de0000 	C:\Windows\system32\kernel32.dll
+0x000007fefd4a0000 - 0x000007fefd50c000 	C:\Windows\system32\KERNELBASE.dll
+0x000007fefdb20000 - 0x000007fefdbfb000 	C:\Windows\system32\ADVAPI32.dll
+0x000007fefd9d0000 - 0x000007fefda6f000 	C:\Windows\system32\msvcrt.dll
+0x000007fefeaa0000 - 0x000007fefeabf000 	C:\Windows\SYSTEM32\sechost.dll
+0x000007fefec80000 - 0x000007fefedad000 	C:\Windows\system32\RPCRT4.dll
+0x0000000076bc0000 - 0x0000000076cba000 	C:\Windows\system32\USER32.dll
+0x000007fefd870000 - 0x000007fefd8d7000 	C:\Windows\system32\GDI32.dll
+0x000007fefdb10000 - 0x000007fefdb1e000 	C:\Windows\system32\LPK.dll
+0x000007fefeb60000 - 0x000007fefec29000 	C:\Windows\system32\USP10.dll
+0x000007fefbcb0000 - 0x000007fefbea4000 	C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.18837_none_fa3b1e3d17594757\COMCTL32.dll
+0x000007fefd7f0000 - 0x000007fefd861000 	C:\Windows\system32\SHLWAPI.dll
+0x000007fefefc0000 - 0x000007fefefee000 	C:\Windows\system32\IMM32.DLL
+0x000007fefe990000 - 0x000007fefea99000 	C:\Windows\system32\MSCTF.dll
+0x00000000733c0000 - 0x0000000073492000 	C:\Program Files\Java\jre1.8.0_31\bin\msvcr100.dll
+0x0000000062430000 - 0x0000000062c8a000 	C:\Program Files\Java\jre1.8.0_31\bin\server\jvm.dll
+0x000007fef8ca0000 - 0x000007fef8ca9000 	C:\Windows\system32\WSOCK32.dll
+0x000007fefec30000 - 0x000007fefec7d000 	C:\Windows\system32\WS2_32.dll
+0x000007fefd8e0000 - 0x000007fefd8e8000 	C:\Windows\system32\NSI.dll
+0x000007fefb220000 - 0x000007fefb25b000 	C:\Windows\system32\WINMM.dll
+0x0000000076fa0000 - 0x0000000076fa7000 	C:\Windows\system32\PSAPI.DLL
+0x0000000074130000 - 0x000000007413f000 	C:\Program Files\Java\jre1.8.0_31\bin\verify.dll
+0x0000000074100000 - 0x0000000074128000 	C:\Program Files\Java\jre1.8.0_31\bin\java.dll
+0x00000000740e0000 - 0x00000000740f6000 	C:\Program Files\Java\jre1.8.0_31\bin\zip.dll
+0x000007fef0890000 - 0x000007fef09b5000 	C:\Windows\system32\dbghelp.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=GBK -Xbootclasspath:C:\Users\Administrator\Desktop\android-sdk_r24.4.1-windows\android-sdk-windows\platforms\android-8\android.jar 
+java_command: dalvik.system.TouchDex
+java_class_path (initial): C:\Users\Administrator\Desktop\android-sdk_r24.4.1-windows\android-sdk-windows\tools\support\annotations.jar;C:\Users\Administrator\Desktop\android\DroidWall\bin\classes
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+CLASSPATH=.;C:\Program Files\Java\jdk1.8.0_20\lib
+PATH=C:/Program Files/Java/jre1.8.0_31/bin/server;C:/Program Files/Java/jre1.8.0_31/bin;C:/Program Files/Java/jre1.8.0_31/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\OpenCL SDK\3.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\3.0\bin\x64;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Python27\;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\;C:\Program Files (x86)\MySQL\MySQL Fabric 1.5.3 & MySQL Utilities 1.5.3 1.5\Doctrine extensions for PHP\;C:\HashiCorp\Vagrant\bin;C:\Program Files\Java\jdk1.8.0_20\bin;C:\Users\Administrator\Desktop\android-sdk_r24.4.1-windows\android-sdk-windows\platform-tools;C:\Users\Administrator\Desktop\android-sdk_r24.4.1-windows\android-sdk-windows\tools;C:\Users\Administrator\Desktop\eclipse-standard-luna-R-win32-x86_64\eclipse;
+USERNAME=Administrator
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 69 Stepping 1, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 7 , 64 bit Build 7601 Service Pack 1
+
+CPU:total 4 (2 cores per cpu, 2 threads per core) family 6 model 69 stepping 1, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, erms, lzcnt, ht, tsc, tscinvbit, bmi1, bmi2
+
+Memory: 4k page, physical 8295108k(5238344k free), swap 16588380k(12528088k free)
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (25.31-b07) for windows-amd64 JRE (1.8.0_31-b13), built on Dec 17 2014 21:00:28 by "java_re" with MS VC++ 10.0 (VS2010)
+
+time: Mon Nov 23 17:01:17 2015
+elapsed time: 0 seconds (0d 0h 0m 0s)
+
